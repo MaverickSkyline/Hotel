@@ -1,6 +1,64 @@
 <html>
-    <title>Hello World</title>
-    <body>
-        <h1>Can you see this?</h1>
-    </body>
+    <title>LOMS Artwork Sales & Gallery | (Customer) Hompage</title>
+    <style>
+        .card{
+            width:29%;
+            margin:2%;
+        }
+
+        #featArt{
+            margin-bottom:6%;
+            margin-top:3%;
+        }
+        .card-img-top {
+            width:100%;
+            height:15vw;
+            object-fit:fill;
+        }
+
+        #banner{
+            background-image:url('../Photos/artBanner.PNG');
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+
+        #viewArt{
+            position: relative;
+            text-align: center;
+        }
+
+        #browse{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size:xx-large;
+        }
+    </style>
+<div ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script>
+	    $('#selTab li:first-child a').tab('show')
+    </script>
+    <h1 class="text-center"><b>Welcome <div ID="wlcName" runat="server" Text="Bildo"></div></b></h1>
+    <div class="card text-center w-100" id="featArt">
+        <div class="card-header">Feature Artwork</div>
+        <div class="card-body">
+            <h4 class="card-title"><div ID="feaTitle" runat="server" Text=""></div></h4>
+            <p class="card-text"><div ID="feaDesc" runat="server" Text=""></div></p>
+            <input type="hidden" id="Hidden1" runat="server"/>
+            <button ID="Button1" runat="server" Text="View Art" CssClass="btn btn-outline-info" OnClick="Button_Click"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><div ID="artTitle1" runat="server" Text=""></div></h4>
+                <p class="card-text"><div ID="artDesc1" runat="server" Text=""></div><br /><br /> Artist: <div ID="cretName1" Text=""></div></p>
+                <input type="hidden" id="Hidden2" runat="server"/>
+                <button ID="Button2" runat="server" Text="View Detail" CssClass="btn btn-outline-info" OnClick="Button_Click"/>
+            </div>
+        </div>
+    </div>
+</div>
 </html>
