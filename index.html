@@ -1,83 +1,50 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <!-- CSS only -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<!-- CSS only -->
+<link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<title>Welcome Page | LOMS Hotel Website</title>
+
+<style>
+    body > .container{
+        height: 300px;
+        padding-bottom:100px;
+    }
+
+    h1{
+        margin-bottom: 80px;
+    }
     
-        <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    .mainLogo{
+		margin-top:50px;
+	}
+	
+	footer{
+		margin-top:350px;
+}
+</style>
     
-        <title>LOMS Artwork Sales & Gallery | (Customer) Hompage</title>
-        <style>
-            a, a:hover{
-                color:white;
-            }
-    
-            ol.breadcrumb  a{
-                color:black;
-            }
-            .card{
-                width:29%;
-                margin:2%;
-            }
+</head>
 
-            #featArt{
-                margin-bottom:6%;
-                margin-top:3%;
-            }
-            .card-img-top {
-                width:100%;
-                height:15vw;
-                object-fit:fill;
-            }
-
-            #banner{
-                background-image:url('../Photos/artBanner.PNG');
-                background-repeat:no-repeat;
-                background-position:center;
-            }
-
-            #viewArt{
-                position: relative;
-                text-align: center;
-            }
-
-            #browse{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font-size:xx-large;
-            }
-        </style>
-    </head>
-    <body>
-        <div ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-            <script>
-                $('#selTab li:first-child a').tab('show')
-            </script>
-            <h1 class="text-center"><b>Welcome Ong Teck Sern</div></b></h1>
-            <div class="card text-center w-100" id="featArt">
-                <div class="card-header">Feature Artwork</div>
-                <div class="card-body">
-                    <h4 class="card-title"><div ID="feaTitle" runat="server" Text=""></div></h4>
-                    <p class="card-text"><div ID="feaDesc" runat="server" Text=""></div></p>
-                    <input type="hidden" id="Hidden1" runat="server"/>
-                    <button ID="Button1" runat="server" Text="View Art" CssClass="btn btn-outline-info" OnClick="Button_Click"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title"><div ID="artTitle1" runat="server" Text=""></div></h4>
-                        <p class="card-text"><div ID="artDesc1" runat="server" Text=""></div><br /><br /> Artist: <div ID="cretName1" Text=""></div></p>
-                        <input type="hidden" id="Hidden2" runat="server"/>
-                        <button ID="Button2" runat="server" Text="View Detail" CssClass="btn btn-outline-info" OnClick="Button_Click"/>
-                    </div>
-                </div>
-            </div>
+<body>
+	<div class="container">
+		<div class="text-center" style="margin-bottom:0">
+			<img class="mainLogo" src="Hotel_Logo.png" alt="Hotel Logo" height="auto"/>
+		</div>
+        <h1 class="text-center">Room Reservation Website</h1>
+        <div class="text-center">
+            <button type="button" class="btn btn-danger" onclick="">Get Started</button>
         </div>
-    </body>
+    </div>
+
+	<footer class="footer-copyright text-center">
+        All right reserve to LOMS Hotel &reg;
+    </footer>
+</body>
 </html>
