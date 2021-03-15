@@ -13,7 +13,7 @@
 
 <style>
 	form{
-    margin-top: 80px;
+    margin-top: 60px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -25,7 +25,15 @@
 	}
 	
 	footer{
-	    margin-top: 180px;
+	    margin-top: 140px;
+	}
+	
+	.btn{
+		margin-right:15px
+	}
+	
+	b{
+		font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
 	}
 </style>
 </head>
@@ -34,8 +42,8 @@
     <div class="container">
         <form action='unsaved:///checkUser' method="POST">
         	<legend class="text-center">
-        		<img class="mainLogo" src="Hotel_Logo.png" alt="Hotel Logo" height="auto"/>
-                <b>Login Page</b>
+        		<img class="mainLogo" src="photo/Hotel_Logo.png" alt="Hotel Logo" height="auto"/>
+                <b class="font-weight-bolder display-5">Login Page</b>
             </legend>
             <div class="form-group row">
                 <label for="inputEmail" class="col-md-4 form-label">Email Address: </label>
@@ -51,7 +59,12 @@
                 </div>
             </div>
             <div class="form-group text-center">
-                <input type="submit" value="Sign In" class="btn btn-danger " style="margin-top:50px;">
+            	<input type="submit" value="Register" class="btn btn-danger " style="margin-top:50px;">
+                <input type="submit" value="Sign In" class="btn btn-danger " style="margin-top:50px;"> 
+            </div>
+            <br/>
+            <div class="form-group row text-center" style="font-size:small">
+            	<p>Forgetted Password? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click Here</a></p>
             </div>
         </form>
     </div>
